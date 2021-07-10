@@ -1,0 +1,60 @@
+#' @title DATASET_TITLE
+#' @description DATASET_DESCRIPTION
+#' @format A data frame with 54675 rows and 47 variables:
+#' \describe{
+#'   \item{\code{GSM85473}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85474}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85475}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85476}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85477}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85478}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85479}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85480}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85481}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85482}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85483}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85484}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85485}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85486}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85487}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85488}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85489}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85490}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85491}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85492}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85493}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85494}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85495}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85496}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85497}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85498}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85499}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85500}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85501}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85502}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85503}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85504}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85505}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85506}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85507}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85508}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85509}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85510}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85511}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85512}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85513}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85514}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85515}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85516}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85517}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85518}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{GSM85519}}{double COLUMN_DESCRIPTION}
+#'}
+#' @details DETAILS
+"brcaData" <- read.delim('data-raw/GSE3744_series_matrix.txt', row.names=1)
+
+usethis::use_data(brcaData, overwrite=T)
+
+sinew::makeOxygen(brcaData, add_fields = "source")
+
+
