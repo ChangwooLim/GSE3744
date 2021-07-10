@@ -51,10 +51,4 @@
 #'   \item{\code{GSM85519}}{double COLUMN_DESCRIPTION}
 #'}
 #' @details DETAILS
-"brcaData" <- read.delim('data-raw/GSE3744_series_matrix.txt', row.names=1)
-
-usethis::use_data(brcaData, overwrite=T)
-
-sinew::makeOxygen(brcaData, add_fields = "source")
-
-
+"brcaData"
